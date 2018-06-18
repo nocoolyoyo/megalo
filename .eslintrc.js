@@ -4,12 +4,14 @@ module.exports = {
     node: true
   },
   'extends': [
-    'plugin:vue/essential',
+	'plugin:vue/essential',
     '@vue/standard',
     '@vue/typescript'
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+	'indent': 'off',
+    //'vue/script-indent': ['error', 4, {'baseIndent': 1}]
   }
 }
