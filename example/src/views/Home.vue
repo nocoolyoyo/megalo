@@ -1,8 +1,8 @@
 <template>
     <div class="home">
         <img src="../assets/logo.png"/>
-        <m-avatar size="sm" @close="handleAvatarClose" @click="handleAvatarClick">
-            <img src="http://img1.imgtn.bdimg.com/it/u=536420273,1132721000&fm=27&gp=0.jpg"/>
+        <m-avatar size="sm" @click="handleAvatarClick">
+            <img src="http://cdn.duitang.com/uploads/item/201601/24/20160124191335_BcwtX.jpeg"/>
         </m-avatar>
     </div>
 </template>

@@ -4,19 +4,27 @@
 @each $main, $colors in $--Colors {
     @each $key, $color in $colors {
         @if($key == 500){
-            .bg-#{$main} {
+            .m-bg--#{$main} {
                 background-color: $color;
             }
-            .color-#{$main}{
+            .m-color--#{$main}{
                 color: $color;
             }
         }@else{
-            .bg-#{$main}#{$key} {
+            .m-bg--#{$main}#{$key} {
                 background-color: $color;
             }
-            .color-#{$main}#{$key}{
+            .m-color--#{$main}#{$key}{
                 color: $color;
             }
         }
+    }
+}
+/**
+ * shadow 阴影
+ */
+@each $key, $shadow in $--Shadows {
+    .m-shadow--#{$key} {
+        box-shadow: $shadow;
     }
 }
